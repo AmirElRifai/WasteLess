@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WasteLess</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2e7d32',
+                        secondary: '#81c784',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <custom-navbar></custom-navbar>
+
+    <main>
+<!-- Hero Section -->
+<section class="bg-primary text-white py-24 text-center">
+<div class="container mx-auto px-6">
+<h1 class="text-4xl md:text-6xl font-bold mb-6">WasteLess Features</h1>
+<p class="text-xl md:text-2xl">Discover how our solution helps you save money and reduce food waste</p>
+</div>
+</section>
+
+        <!-- Features Section -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="bg-primary text-white rounded-xl p-4 flex-shrink-0 h-16 w-16 flex items-center justify-center">
+                            <i data-feather="search" class="w-8 h-8"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-3 text-gray-800">Smart Search</h3>
+                            <p class="text-gray-600">Find discounted products by category, location, or price range. Our intelligent search helps you discover the best deals near you.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="bg-primary text-white rounded-xl p-4 flex-shrink-0 h-16 w-16 flex items-center justify-center">
+                            <i data-feather="bell" class="w-8 h-8"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-3 text-gray-800">Personalized Alerts</h3>
+                            <p class="text-gray-600">Get notified when your favorite items are discounted. Set preferences for specific products or stores.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="bg-primary text-white rounded-xl p-4 flex-shrink-0 h-16 w-16 flex items-center justify-center">
+                            <i data-feather="map" class="w-8 h-8"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-3 text-gray-800">Interactive Map</h3>
+                            <p class="text-gray-600">Visualize nearby stores with discounted products. Filter by distance, ratings, or available discounts.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="bg-primary text-white rounded-xl p-4 flex-shrink-0 h-16 w-16 flex items-center justify-center">
+                            <i data-feather="clock" class="w-8 h-8"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-3 text-gray-800">Expiration Countdown</h3>
+                            <p class="text-gray-600">See exactly how much time is left before products expire. Make informed decisions about your purchases.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="bg-primary text-white rounded-xl p-4 flex-shrink-0 h-16 w-16 flex items-center justify-center">
+                            <i data-feather="heart" class="w-8 h-8"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-3 text-gray-800">Sustainability Tracking</h3>
+                            <p class="text-gray-600">Monitor your personal impact. See how much food waste you've prevented and money you've saved.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-6">
+                        <div class="bg-primary text-white rounded-xl p-4 flex-shrink-0 h-16 w-16 flex items-center justify-center">
+                            <i data-feather="users" class="w-8 h-8"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-3 text-gray-800">Community Sharing</h3>
+                            <p class="text-gray-600">Share your finds with friends. Create shopping groups to maximize savings and minimize waste.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">What Our Users Say</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-xl shadow-md">
+                        <div class="flex items-center mb-4">
+                            <div class="text-primary text-3xl mr-2">"</div>
+                            <p class="text-gray-600 italic">I've cut my grocery bill by 30% while feeling good about reducing waste. Win-win!</p>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-gray-200 rounded-full w-12 h-12 mr-4"></div>
+                            <div>
+                                <h4 class="font-semibold">Sarah J.</h4>
+                                <p class="text-sm text-gray-500">Teacher, Portland</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-md">
+                        <div class="flex items-center mb-4">
+                            <div class="text-primary text-3xl mr-2">"</div>
+                            <p class="text-gray-600 italic">As a student, this app has been a lifesaver. Quality food at prices I can actually afford.</p>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-gray-200 rounded-full w-12 h-12 mr-4"></div>
+                            <div>
+                                <h4 class="font-semibold">Miguel R.</h4>
+                                <p class="text-sm text-gray-500">Student, Chicago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-md">
+                        <div class="flex items-center mb-4">
+                            <div class="text-primary text-3xl mr-2">"</div>
+                            <p class="text-gray-600 italic">Our store has reduced food waste by 40% since partnering with WasteLess. Customers love the deals too.</p>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-gray-200 rounded-full w-12 h-12 mr-4"></div>
+                            <div>
+                                <h4 class="font-semibold">Lisa T.</h4>
+                                <p class="text-sm text-gray-500">Store Manager, Austin</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WasteLess</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2e7d32',
+                        secondary: '#81c784',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+    <custom-navbar></custom-navbar>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-primary text-white py-24 text-center">
+            <div class="container mx-auto px-6">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Fight Food Waste, Save Money</h1>
+                <p class="text-xl md:text-2xl mb-8">Discover discounted, soon-to-expire products from supermarkets near you</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="features.html" class="bg-white text-primary px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300">How It Works</a>
+                    <a href="#" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-primary transition duration-300">Download App</a>
+                </div>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 h-8 bg-white/50 backdrop-blur-sm -z-1"></div>
+</section>
+
+        <!-- Stats Section -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div class="p-6 rounded-xl bg-gray-50 hover:shadow-lg transition duration-300">
+                        <div class="text-primary text-4xl font-bold mb-2">32%</div>
+                        <h3 class="text-xl font-semibold mb-2">of all food</h3>
+                        <p class="text-gray-600">produced globally is wasted every year</p>
+                    </div>
+                    <div class="p-6 rounded-xl bg-gray-50 hover:shadow-lg transition duration-300">
+                        <div class="text-primary text-4xl font-bold mb-2">$1T</div>
+                        <h3 class="text-xl font-semibold mb-2">in economic costs</h3>
+                        <p class="text-gray-600">from food waste annually worldwide</p>
+                    </div>
+                    <div class="p-6 rounded-xl bg-gray-50 hover:shadow-lg transition duration-300">
+                        <div class="text-primary text-4xl font-bold mb-2">8-10%</div>
+                        <h3 class="text-xl font-semibold mb-2">of greenhouse gases</h3>
+                        <p class="text-gray-600">come from food waste</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">How WasteLess Works</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="text-center p-6">
+                        <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <i data-feather="map-pin" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Find Nearby Stores</h3>
+                        <p class="text-gray-600">Locate supermarkets offering discounted soon-to-expire products in your area</p>
+                    </div>
+                    <div class="text-center p-6">
+                        <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <i data-feather="shopping-bag" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Browse Discounts</h3>
+                        <p class="text-gray-600">See real-time listings of discounted items before they go to waste</p>
+                    </div>
+                    <div class="text-center p-6">
+                        <div class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <i data-feather="dollar-sign" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Save Money</h3>
+                        <p class="text-gray-600">Get high-quality food at reduced prices while helping the planet</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-16 bg-primary text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-6">Ready to Waste Less?</h2>
+                <p class="text-xl mb-8 max-w-2xl mx-auto">Join thousands of people already saving money and reducing food waste</p>
+                <a href="#" class="bg-white text-primary px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300 inline-block">Download the App</a>
+            </div>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>

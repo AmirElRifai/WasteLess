@@ -1,0 +1,271 @@
+/* Custom CSS for WasteLess */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Footer specific styles */
+.custom-footer {
+  background: #2e7d32;
+  color: white;
+  padding: 3rem 0;
+}
+
+.custom-footer a {
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+}
+
+.custom-footer a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.custom-footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.custom-footer .grid {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .custom-footer .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.custom-footer .md\:col-span-2 {
+  grid-column: span 2;
+}
+
+.custom-footer .text-primary {
+  color: #81c784;
+}
+
+.custom-footer .text-gray-400 {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.custom-footer .border-gray-700 {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.custom-footer .social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.custom-footer .social-icon:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+}
+
+.custom-footer .footer-link:hover {
+  color: #81c784;
+  padding-left: 0.5rem;
+}
+
+.custom-footer .flex {
+  display: flex;
+}
+
+.custom-footer .items-center {
+  align-items: center;
+}
+
+.custom-footer .space-x-4 > * + * {
+  margin-left: 1rem;
+}
+
+.custom-footer .space-y-2 > * + * {
+  margin-top: 0.5rem;
+}
+
+.custom-footer .mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.custom-footer .mb-4 {
+  margin-bottom: 1rem;
+}
+
+.custom-footer .mr-2 {
+  margin-right: 0.5rem;
+}
+
+.custom-footer .mr-1 {
+  margin-right: 0.25rem;
+}
+
+.custom-footer .w-4 {
+  width: 1rem;
+}
+
+.custom-footer .h-4 {
+  height: 1rem;
+}
+
+.custom-footer .text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.custom-footer .font-semibold {
+  font-weight: 600;
+}
+
+.custom-footer .text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.custom-footer .font-bold {
+  font-weight: 700;
+}
+
+.custom-footer .rounded-full {
+  border-radius: 9999px;
+}
+
+.custom-footer .border-t {
+  border-top-width: 1px;
+}
+
+.custom-footer .pt-8 {
+  padding-top: 2rem;
+}
+
+.custom-footer .mt-12 {
+  margin-top: 3rem;
+}
+
+/* Footer animation effects */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.custom-footer > * {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.custom-footer > *:nth-child(1) { animation-delay: 0.1s; }
+.custom-footer > *:nth-child(2) { animation-delay: 0.2s; }
+.custom-footer > *:nth-child(3) { animation-delay: 0.3s; }
+.custom-footer > *:nth-child(4) { animation-delay: 0.4s; }
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f9f9f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a5d6a7;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c8e6c9;
+}
+
+/* Animation for buttons */
+.btn-hover-effect {
+  transition: all 0.3s ease;
+  transform: translateY(0);
+}
+.btn-hover-effect:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive footer adjustments */
+@media (max-width: 767px) {
+  .custom-footer .grid {
+    grid-template-columns: 1fr;
+  }
+  .custom-footer .md\:col-span-2 {
+    grid-column: span 1;
+  }
+  .custom-footer .text-center-mobile {
+    text-align: center;
+  }
+  .custom-footer .flex-col-mobile {
+    flex-direction: column;
+  }
+  .custom-footer .social-icons-mobile {
+    justify-content: center;
+  }
+}
+
+/* Custom card hover effect */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Section padding for consistency */
+.section-padding {
+  padding: 5rem 0;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 3rem 0;
+  }
+}
+
+/* Custom underline for headings */
+.heading-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.heading-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #2e7d32;
+}
+
+/* Responsive typography */
+@media (max-width: 640px) {
+  .responsive-text {
+    font-size: 1.25rem !important;
+  }
+}
+
+/* Accessibility focus styles */
+a:focus, button:focus {
+  outline: 2px solid #2e7d32;
+  outline-offset: 2px;
+}

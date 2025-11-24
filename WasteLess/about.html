@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WasteLess</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2e7d32',
+            secondary: '#81c784',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gray-50">
+  <custom-navbar></custom-navbar>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-primary text-white py-24 text-center">
+      <div class="container mx-auto px-6">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">Our Mission</h1>
+        <p class="text-xl md:text-2xl">Reducing food waste one meal at a time</p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold mb-8 text-center text-gray-800">The WasteLess Story</h2>
+          <div class="prose prose-lg text-gray-600">
+            <p class="mb-6">WasteLess was born from a simple observation: while supermarkets throw away perfectly good food, many people struggle to afford groceries. We saw an opportunity to connect these two problems with a solution that benefits everyone.</p>
+
+            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-800">The Food Waste Crisis</h3>
+            <p class="mb-6">Globally, about one-third of all food produced for human consumption goes to waste. In developed countries, this waste happens mostly at the retail and consumer levels. Supermarkets discard food that's still edible but nearing its expiration date, simply because they can't sell it fast enough.</p>
+
+            <div class="bg-primary/10 p-6 rounded-xl my-8 border-l-4 border-primary">
+              <h4 class="text-xl font-semibold mb-3 text-primary">Did You Know?</h4>
+              <p>If food waste were a country, it would be the third-largest emitter of greenhouse gases after China and the United States.</p>
+            </div>
+
+            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-800">Our Solution</h3>
+            <p class="mb-6">WasteLess creates a marketplace for soon-to-expire food products. Supermarkets can list these items at discounted prices, consumers get access to affordable groceries, and together we keep perfectly good food out of landfills.</p>
+
+            <h3 class="text-2xl font-semibold mt-8 mb-4 text-gray-800">The Team</h3>
+            <p class="mb-6">We're a diverse group of environmentalists, technologists, and food industry veterans united by a common goal: to make our food system more sustainable and equitable.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Our Impact So Far</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div class="bg-white p-8 rounded-xl shadow-md text-center">
+            <div class="text-primary text-5xl font-bold mb-3">5M+</div>
+            <h3 class="text-xl font-semibold mb-2">Meals Saved</h3>
+            <p class="text-gray-600">From going to waste</p>
+          </div>
+          <div class="bg-white p-8 rounded-xl shadow-md text-center">
+            <div class="text-primary text-5xl font-bold mb-3">$25M+</div>
+            <h3 class="text-xl font-semibold mb-2">Saved by Users</h3>
+            <p class="text-gray-600">On grocery bills</p>
+          </div>
+          <div class="bg-white p-8 rounded-xl shadow-md text-center">
+            <div class="text-primary text-5xl font-bold mb-3">1K+</div>
+            <h3 class="text-xl font-semibold mb-2">Partner Stores</h3>
+            <p class="text-gray-600">Across North America</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Join Our Movement Section with Contact -->
+    <section class="py-20 bg-primary text-white text-center">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Join Our Movement</h2>
+        <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+          Whether you're a consumer, retailer, or just someone who cares about food waste, there's a place for you in the WasteLess community.
+        </p>
+
+        <div class="mb-8">
+          <h3 class="text-2xl font-semibold mb-2">Contact Us</h3>
+          <p class="text-lg mb-2">
+            <a href="mailto:info@wasteless.com" class="underline hover:text-secondary transition">info@wasteless.com</a><br>
+            <span class="block mt-2">Phone: (+33) 7 12 34 56 78</span>
+          </p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row justify-center gap-4 mt-4">
+          <a href="#" class="bg-white text-primary px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300">Download the App</a>
+          <a href="#" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-primary transition duration-300">Partner With Us</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <custom-footer></custom-footer>
+
+  <script src="components/navbar.js"></script>
+  <script src="components/footer.js"></script>
+  <script src="script.js"></script>
+  <script>feather.replace();</script>
+</body>
+</html>
